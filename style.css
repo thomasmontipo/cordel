@@ -49,6 +49,7 @@ header > h1{
     padding-top: 40px;
     font-size: 5em;
     text-align: center;
+    text-transform:uppercase;
 }
 
 header > p {
@@ -72,16 +73,15 @@ main > p {
     font-family: var(--font-padrao);
 }
 
-div.container{ 
+div.container#img1{ 
     background-image: url(imagens/background001.jpg);
     position: relative;
     background-attachment: fixed;
     width: 1000px;
     height: 500px;
-    background-size: 100% 100%;
+    background-size: cover;
 }
-
-div.container2{ 
+div.container#img2{ 
     background-image: url(imagens/background002.jpg);
     position: relative;
     background-attachment: fixed;
@@ -101,6 +101,7 @@ div.container2{
     background-color: rgba(0, 0, 0, 0.439);
     border-radius: 20px;
     margin: 0%;
+    display: inline-block;
 }
 .text-image2{
     color: rgba(255, 255, 255, 0.623);
@@ -124,4 +125,18 @@ footer > p{
     color: white;
     text-align: center;
     font-family: var(--fonte-titulo);
+}
+
+/*Responsividade*/
+
+@media (max-width:1000px){
+    div.container2{ 
+        background-image: url(imagens/background002.jpg);
+        position: relative;
+        background-attachment: fixed;
+        width: auto;
+        height: auto;
+        background-size: 100% 100%;
+    }
+    
 }
